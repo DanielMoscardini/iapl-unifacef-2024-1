@@ -164,7 +164,6 @@ controller.login = async function(req, res) {
 }
 
 controller.me = function(req, res) {
-
   // Se o usuário autenticado estiver salvo em req,
   // retorna-o
   if(req.authUser) res.send(req.authUser)
