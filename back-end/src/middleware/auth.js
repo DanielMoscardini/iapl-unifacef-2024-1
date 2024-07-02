@@ -99,7 +99,7 @@ export default async function(req, res, next) {
 
   // Sessão OK, armazenamos os dados do usuário recuperados junto com a
   // sessão em req.authUser para posterior utilização
-  // Obs.: tomamos o cuidado de apagar o campo password
+  // Obs.: tomamos o cuidado de apagar o campo password.
   if(session.user?.password) delete session.user?.password
   req.authUser = session.user
 
